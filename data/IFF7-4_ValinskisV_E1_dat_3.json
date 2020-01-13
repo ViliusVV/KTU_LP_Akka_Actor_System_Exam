@@ -1,0 +1,32 @@
+[
+{
+        "name": "Myrvyn Hartshorne",
+        "streetNum": 56,
+        "balance": 13546.25
+    },
+    {
+        "name": "Lishe Marciek",
+        "streetNum": 21,
+        "balance": 31495.35
+    },
+    {
+        "name": "Emmi Daleman",
+        "streetNum": 20,
+        "balance": 82978.96
+    },
+    {
+        "name": "Wilma McKillop",
+        "streetNum": 73,
+        "balance": 53262.61
+    },
+    {
+        "name": "Ekaterina Mullaney",
+        "streetNum": 17,
+        "balance": 16937.03
+    },
+    {
+        "name": "Timmy Crysell",
+        "streetNum": 11,
+        "balance": 52651.94
+    }
+]
