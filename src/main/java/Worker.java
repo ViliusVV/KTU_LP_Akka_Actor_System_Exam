@@ -16,6 +16,7 @@ public class Worker extends AbstractActor {
         this.resultGatherer = resultGatherer;
     }
 
+    // Props method for creating actor instance with argument for constructor
     static Props props(ActorRef resultGatherer)
     {
         return Props.create(Worker.class, () -> new Worker(resultGatherer));

@@ -3,14 +3,13 @@ import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
 import akka.routing.Broadcast;
-import akka.routing.RoundRobinPool;
 import akka.routing.SmallestMailboxPool;
 
 public class MasterManager extends AbstractActor {
     // ActorSystem logger instance
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(),this);
 
-    private final static int WORKER_COUNT = 8;
+    private final static int WORKER_COUNT = 4;
     // Result gatherer actor
     private final ActorRef resultGatherer = this.getContext().actorOf(Props.create(ResultGatherer.class), "resultGatherer");
     // Worker router, including its worker children

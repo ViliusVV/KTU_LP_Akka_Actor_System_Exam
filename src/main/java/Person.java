@@ -1,11 +1,7 @@
+import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Collection;
 import java.util.Collections;
-import javax.xml.bind.DatatypeConverter;
-
-import com.google.gson.*;
-import com.sun.xml.internal.ws.util.StringUtils;
 
 
 public class Person {

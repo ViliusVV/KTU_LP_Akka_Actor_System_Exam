@@ -1,19 +1,17 @@
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.Reader;
-import java.lang.reflect.Type;
-import java.time.Duration;
-import java.util.*;
-import java.io.IOException;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-
-import akka.actor.*;
-import com.google.gson.*;
+import akka.actor.ActorRef;
+import akka.actor.ActorSystem;
+import akka.actor.Props;
+import akka.actor.Terminated;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import scala.concurrent.Await;
 import scala.concurrent.Future;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 
 
 class ExamMain {
@@ -67,25 +65,3 @@ class ExamMain {
         System.out.println(String.format("Program finished all work in %.2fms!", elapsed));
     }
 }
-
-
-
-//        Scanner myObj = new Scanner(System.in);
-//        String name;
-//        Person person = new Person("John", 65.6, 55);
-//
-//
-//        // Enter username and press Enter
-//        System.out.println(Person.tableHeader());
-//        person.calculateHash(1_000_000);
-//        System.out.println(person);
-//
-//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-//
-//        List<Person> people = Collections.nCopies(5, person);
-//
-//        try (FileWriter writer = new FileWriter("IFF7-4_ValinskisV_E1_res.json")) {
-//            gson.toJson(people, writer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
